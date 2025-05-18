@@ -1,0 +1,35 @@
+{
+  "name": "tailwind-human-formatter",
+  "displayName": "Tailwind Human Formatter",
+  "description": "Formats HTML files with a vertically stacked Tailwind class layout",
+  "version": "0.0.1",
+  "publisher": "your-name",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [
+    "onLanguage:html"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "html",
+        "aliases": [
+          "HTML"
+        ],
+        "extensions": [
+          ".html"
+        ]
+      }
+    ],
+    "configurationDefaults": {
+      "[html]": {
+        "editor.defaultFormatter": "your-name.tailwind-human-formatter"
+      }
+    }
+  }
+}
