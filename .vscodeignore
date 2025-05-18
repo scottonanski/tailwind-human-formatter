@@ -1,0 +1,7 @@
+# Don't include node modules (big dependency folders)
+node_modules/
+
+# Ignore local logs or build junk
+*.log
+dist/
+build/
